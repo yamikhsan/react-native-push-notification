@@ -497,6 +497,7 @@ public class RNPushNotificationHelper {
                 
             notification.setChannelId(channel_id);
             notification.setContentIntent(pendingIntent);
+            notification.setFullScreenIntent(pendingIntent, true);
 
             JSONArray actionsArray = null;
             try {
